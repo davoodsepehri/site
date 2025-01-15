@@ -1,12 +1,210 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+   <html xmlns="http://www.w3.org/1999/xhtml">
+
+<script>document.getElementsByTagName('div')[0].style.display='none';</script>
 <head>
-  <title>Title of the document</title>
+<link rel="shortcut icon" href="http://davsep.persiangig.com/favicon.ico">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<META content="وب سایت داود سپهری کیان [sc:Blog_Title]" name="description" />
+<META content="" name=keywords />
+<title>[sc:Blog_Title]</title>
+<style>
+
+body {background:url(http://davsep.persiangig.com/background.jpg) no-repeat fixed; width:auto; background-size: cover; font: 9pt tahoma;}
+
+.titlediv {border:1px solid #FFFF33;background-color:#336699; filter:progid:DXImageTransform.Microsoft.alpha(opacity=100); -moz-opacity:1; opacity:1;
+direction:rtl; width:760px; height:200px; clear:both;}
+
+.title {position: relative; top:8%; font-family:Times New Roman; font-size:35pt; color:#FFFF33; font-weight:bold;}
+
+.menudiv {border:1px solid #FFFF33;background-color:#336699; direction:rtl; width:760px; height:20px; clear:both;}
+
+.menu {position: relative; top: 0%; font-family:Tahoma; font-size:8pt; color:#FFFF33;}
+
+.side {direction:rtl; float:right; width:180px; padding:5px; height:100%;}
+
+.sidetitles {width:180px; margin-top:10px; padding:5px;  font-family:Tahoma; font-size:8pt; font-weight:bold; color:#FFFF33;
+                   border:1px solid #FFFF33; border-bottom:0px; background-color:#336699;}
+
+.sidebody {width:100%; font-family:tahoma; font-size:9pt; padding:5px;
+	color:white;background-color:#336699;filter:progid:DXImageTransform.Microsoft.alpha(opacity=100); -moz-opacity:1; opacity:1;border:1px solid #FFFF33;}
+
+.main {direction:rtl; float:left; width:520px; padding:5px;}
+
+.maintitle {width:520px; margin-top:10px; padding:5px; display:table;
+	          border:1px solid #FFFF33;border-bottom:0px;background-color:#336699;}
+
+.posttitle {float:right; font-family:Tahoma; font-size:8pt; font-weight:bold; color:#FFFF33; display:table; float:right;}
+
+.postdate {float:left; font-family:Tahoma; font-size:8pt; color:#FFFF33;}
+
+.mainbody {width:100%;border:1px solid #FFFF33;font-family:tahoma; font-size:10pt; color:white; text-align:justify;
+	            padding:5px; padding-top:10px; line-height:150%;
+	            background-color:#336699;filter:progid:DXImageTransform.Microsoft.alpha(opacity=100); -moz-opacity:1; opacity:1;}
+
+.commentlink {font-family:Times New Roman; font-size:12pt; color:blue; font-weight:bold; text-decoration:none;}
+
+.commentlink:hover {color:#00FF00; text-decoration:underline;}
+
+.PostFooter {font-family:Tahoma; font-size:8pt; color:green; text-decoration:none;}
+
+.links {font-family:Tahoma; font-size:10pt;color: #FFFF33;font-weight: none;
+	   font-style: none;text-decoration: none;}
+
+.parseek_link {font-family:Tahoma; font-size:10pt;color: #FFFF33;
+	                font-weight: none;font-style: none;text-decoration: none;}
+
+.links:hover {color: #FF6600;font-weight: none;font-style: none;text-decoration: Underline;}
+
+parseek_link:hover {color: #FF6600;font-weight: none;font-style: none;text-decoration: Underline;}
+
+</style>
+
+	<script language ="javascript">
+	function GetBC(lngPostid)
+	{intTimeZone=[sc:Blog_Time_Zone];
+	strBlogId="[sc:Blog_Id]";
+	intCount=-1;
+	strResult="";
+	try {for (i=0;i<BlogComments.length;i+=2)
+	{if (BlogComments[i]==lngPostid)
+	intCount=BlogComments[i+1] ;}}  
+        catch( e) {}
+	if ( intCount==-1)  strResult="آرشيو نظرات";
+	if ( intCount==0)  strResult="نظر شما";
+	if ( intCount==1)  strResult="يک نظر";
+	if ( intCount>1)  strResult=intCount + " نظر" ;
+	strUrl="http://www.iran.sc/commenting/?blogid=" +strBlogId + "&postid=" + lngPostid + "&timezone=" + intTimeZone ;
+	strResult ="<a href="javascript:void(0)" class="commentlink" onclick="javascript:window.open('" + strUrl + "','blogfa_comments','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px')" >" +  strResult + " </a>" ;
+	document.write ( strResult ) ;}
+	function OpenLD()
+	{window.open('LinkDump.php','blogfa_ld','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px');
+	return true;}
+	</script>
+
+<script>function mo_save () {window.document.execCommand('SaveAs')}</script>
+
 </head>
-<body>
 
-<h1>Test</h1>
-<p>This is a test paragraph.</p>
+<body onload="window.name='[sc:Blog_Url]'">
 
+<div style="width:100%; height:100%; text-align:center; font-family:Tahoma; font-size:8pt;">
+<center>
+<div class="titlediv">
+<table width="100%" height="200" border="0" cellpadding="5" cellspacing="0">
+	<tr>
+		<td>
+			<div class="title" style="text-align:right;" >[sc:Blog_Title]</div>
+			<br>
+			<div class="title" style="text-align:left;" >Davood Sepehri Kian</div>
+
+		</td>
+	</tr>
+	<tr>
+		<td><div class="title" style="font-size:13pt; text-align:center;" >[sc:Blog_Description] </div></td>
+	</tr>
+</table>
+</div>
+
+<br>
+<div style="width:760px; height:100%;">
+<div class="menudiv">
+<div class="menu">
+<a href="[sc:Blog_Url]" class="links" >خانه│Home</a>│
+<a href="http://davsep.iran.sc/pages/aboutme" class="links" >درباره من│About Me</a>│
+<a href="http://davsep.iran.sc/pages/experiences" class="links" >تجربیات│Experiences</a>│
+<a href="http://davsep.iran.sc/pages/abilities" class="links" >تواناییها│Abilities</a>│
+<a href="http://davsep.iran.sc/pages/certificates" class="links" >گواهینامه ها│Certificates</a>│
+<a href="http://davsep.iran.sc/pages/contact" class="links" >تماس│Contact</a>
+</div>
+</div>
+
+<div class="side">
+
+<div class="sidetitles gradient">درباره وب سایت About Website</div>
+<div class="sidebody alpha">
+<sc:Blog_Profile>
+<sc:Blog_Photo><img src="[sc:Blog_Photo_Link]"></sc:Blog_Photo><br>[sc:Blog_About]
+</sc:Blog_Profile>
+</div>
+			
+<div class="sidetitles gradient">مهارتهای من My Skills</div>
+<div class="sidebody alpha">
+<marquee behavior="scroll" direction="down" scrollamount="1">
+        ---------------------------------------------
+<br>ICDL , Advance Word & Excel
+<br>---------------------------------------------
+<br>کامپیوتر، وورد و اکسل پیشرفته
+<br>---------------------------------------------
+<br>Well known of InTools
+<br>---------------------------------------------
+<br>آشنا به نرم افزار اینتولز
+<br>---------------------------------------------
+<br>آشنا به استانداردهای:
+<br>
+<br>IEC , ISA , IEEE , API , EN
+<br>
+<br>familiar with above standards
+<br>---------------------------------------------
+<br>Eng. document generation
+<br>---------------------------------------------
+<br>تولید مدارک مهندسی
+<br>---------------------------------------------
+<br>مهندسی خرید تجهیزات کنترل ابزاردقیق
+<br>---------------------------------------------
+<br>Procurement of I&C system Devices 
+<br>---------------------------------------------
+<br>ESD , F&G control system
+<br>---------------------------------------------
+<br>سیستم کنترل ایمنی فرآیند
+<br>---------------------------------------------
+<br>Siemens S7 control system
+<br>---------------------------------------------
+<br>سیستم کنترل زیمنس S7
+<br>---------------------------------------------
+<br>fieldbus control system
+<br>---------------------------------------------
+<br>سیستم کنترل فیلدباس
+<br>---------------------------------------------
+</marquee>
+</div>
+<div class="sidetitles gradient">لینک های من My Links</div>
+<div class="sidebody alpha">
+         <a href="http://www.iec.ch/"><img alt="IEC" src="http://davsep.persiangig.com/IEC.jpg" /></a>
+<br><a href="http://www.abb.com/industries/us/9AAC123932.php"><img alt="ABB" src="http://davsep.persiangig.com/ABB.jpg" /></a>
+<br><a href="http://www.automation.siemens.com/mcms/automation/en/process-control-system/Pages/Default.php"><img alt="SIEMENS" src="http://davsep.persiangig.com/Siemens.jpg" /></a>
+<br><a href="http://www.uop.com/processing-solutions/gas-processing/"><img alt="Honeywell" src="http://davsep.persiangig.com/Honeywell.jpg" /></a>
+<br><a href="http://www.yokogawa.com/"><img alt="yokogawa" src="http://davsep.persiangig.com/yokogawa.jpg" /></a>
+</div>
+</div>
+
+<div class="main">
+<IRAN>
+<a name="[sc:Post_Id]"></a>
+<div class="maintitle gradient">
+<div class="posttitle">[sc:Post_Title]</div>
+</div>
+<div class="mainbody alpha">[sc:Post_Content]
+<div style="width:100%; text-align:left;">
+</div>
+</div>
+</IRAN>
+
+
+<hr color="#000000" width="290px">تمام حقوق این وب سایت به<a href="http://davsep.iran.sc/pages/aboutme" class="links" > داوود سپهری کیان </a>تعلق دارد
+<br>
+©2008 All rights reserved.
+<br>
+<hr color="#000000" width="290px">
+<br>
+<a href="http://www.digits.com" target="_blank"><img src="http://counter.digits.com/?counter={9227e742-6022-b994-dd36-30347e4c88a2}&template=simple&charset=5&background=336699&foreground=FFFF00" alt="Hit Counter by Digits" border="0" /></a>
+
+
+</div>
+
+</div>
+</div>
+</center>
 </body>
 </html>
