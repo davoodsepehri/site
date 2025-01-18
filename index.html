@@ -12,85 +12,70 @@ body {
 font-family: Arial, Helvetica, sans-serif;
 margin: 0;
 }
-.header {
-padding: 80px;
-text-align: center;
-background: #fdd835ff;
-color: white;
+<div class="container">
+	<div class="item item1 header">header</div>
+	<div class="item item2 aside aside1">aside1</div>
+	<div class="item item3 main">main</div>
+	<div class="item item4 aside aside2">aside2</div>
+	<div class="item item5 footer">footer</div>
+</div>
+ .container {
+  margin: 10px;
+  padding: 10px;
+  min-height: 150px;
+  background-color: #a13647;
+  /* Flexbox */
+  display: flex;
+  flex-flow: row wrap;
 }
-.header h1 {
-font-size: 40px;
+.container .item {
+  background-color: #d84a43;
+  color: #fff;
+  margin: 10px;
+  padding: 10px;
+  min-height: 50px;
 }
-.navbar {
-overflow: hidden;
-background-color: #fdd835ff;
-position: sticky;
-position: -webkit-sticky;
-top: 0;
+.item {
+  flex: 1; /*flex-grow: 1;*/
 }
-.navbar a {
-float: left;
-display: block;
-color: white;
-text-align: center;
-padding: 14px 20px;
-text-decoration: none;
+.item.header {
+  flex: 100%; /*flex-basis: 100%;*/
 }
-.navbar a.right {
-float: right;
+.item.aside {
+  flex: 0 200px; /*flex-grow: 0; flex-basis: 200px;*/
+  height: 150px;
 }
-.navbar a:hover {
-background-color: #ddd;
-color: black;
+.item.main {
+  flex: 1 auto; /*flex-grow: 1; flex-basis: auto ;*/
 }
-.navbar a.active {
-background-color: #666;
-color: white;
+.item.footer {
+  flex: 100%;
 }
-.row {
-display: -ms-flexbox; /* IE10 */
-display: flex;
--ms-flex-wrap: wrap; /* IE10 */
-flex-wrap: wrap;
+@media screen and (max-width: 950px) {
+  .item.header {
+    order: 1;
+  }
+  .item.aside {
+    flex: 1 auto;
+  }
+  .item.aside.aside1 {
+    order: 3;
+  }
+  .item.aside.aside2 {
+    order: 4;
+  }
+  .item.main {
+    order: 2;
+    flex: 1 100%;
+  }
+  .item.footer {
+    order: 5;
+  }
 }
-.side left {
--ms-flex: 20%; /* IE10 */
-flex: 20%;
-background-color: #f1f1f1;
-padding: 20px;
-}
-.main {
--ms-flex: 60%; /* IE10 */
-flex: 60%;
-background-color: white;
-padding: 20px;
-}
-.side right {
--ms-flex: 20%; /* IE10 */
-flex: 20%;
-background-color: #f1f1f1;
-padding: 20px;
-}
-.fakeimg {
-background-color: #fdd835ff;
-width: 100%;
-padding: 20px;
-}
-.footer {
-padding: 20px;
-text-align: center;
-background: #ddd;
-}
-@media screen and (max-width: 700px) {
-.row {
-flex-direction: column;
-}
-}
-@media screen and (max-width: 400px) {
-.navbar a {
-float: none;
-width: 100%;
-}
+@media screen and (max-width: 600px) {
+  .item.aside {
+    flex: 100%; /* flex-basis: 100%; as min-width: 100%;*/
+  }
 }
 </style>
 </head>
