@@ -1,138 +1,261 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<title>داوود سپهری‌کیان</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-box-sizing: border-box;
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="description" content="<-BlogAndPostTitle-> - <مهندس کنترل ابزاردقیق با 22 سال سابقه فعالیت در صنایع نفت و گاز> - <داوود سپهری کیان>">
+<meta name="keywords" content="<-BlogAndPostTitle->,<-BlogId->">
+<META NAME="DesignerUrl" CONTENT="http://Avazak.ir">
+<META NAME="Designer" CONTENT="داوود سپهری‌کیان">
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
+<link rel="alternate" type="application/rss+xml" title="<-BlogTitle->" href="<-BlogXmlLink->" />
+<meta name="GENERATOR" content="BlogFa.com">
+<title><-BlogAndPostTitle-></title>
+<link href="http://avazak.ir/Theme/style/821.css" type="text/css" rel="stylesheet">
+<!--[if IE 5]>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+<script  language="javascript">
+  function GetBC(lngPostid)
+   {
+       intTimeZone=<-BlogTimeZone->;
+       strBlogId="<-BlogId->";
+       intCount=-1;
+       strResult="";
+       try {
+	  for (i=0;i<BlogComments.length;i+=2)
+	  {
+	       if (BlogComments[i]==lngPostid)
+	       intCount=BlogComments[i+1] ;
+	  }
+           }  catch( e) {
+           }
+    if ( intCount==-1)  strResult="آرشیو نظرات";
+    if ( intCount==0)  strResult="نظر بدهید";
+    if ( intCount==1)  strResult="یک نظر";
+    if ( intCount>1)  strResult=intCount + " نظر" ;
+  
+  strUrl="http://commenting.blogfa.com/?blogid=" +strBlogId + "&postid=" + lngPostid + "&timezone=" + intTimeZone ;
+  strResult ="<a href=\"javascript:void(0)\" onclick=\"javascript:window.open('" + strUrl + "','blogfa_comments','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px')\" >" +  strResult + " </a>" ;
+
+  document.write ( strResult ) ;
+ }
+ 
+function OpenLD()
+{
+  window.open('LinkDump.aspx','blogfa_ld','status=yes,scrollbars=yes,toolbar=no,menubar=no,location=no ,width=500px,height=500px');
+  return true;
 }
-body {
-font-family: Arial, Helvetica, sans-serif;
-margin: 0;
-}
-.header {
-padding: 80px;
-text-align: center;
-background: #1abc9c;
-background: #fdd835ff;
-color: white;
-}
-.header h1 {
-font-size: 40px;
-}
-.navbar {
-overflow: hidden;
-background-color: #fdd835ff;
-position: sticky;
-position: -webkit-sticky;
-top: 0;
-}
-.navbar a {
-float: left;
-display: block;
-color: white;
-text-align: center;
-padding: 14px 20px;
-text-decoration: none;
-}
-.navbar a.right {
-float: right;
-}
-.navbar a:hover {
-background-color: #ddd;
-color: black;
-}
-.navbar a.active {
-background-color: #666;
-color: white;
-}
-.row {
-display: -ms-flexbox; /* IE10 */
-display: flex;
--ms-flex-wrap: wrap; /* IE10 */
-flex-wrap: wrap;
-}
-.side {
--ms-flex: 30%; /* IE10 */
-flex: 30%;
-background-color: #f1f1f1;
-padding: 20px;
-}
-.main {
--ms-flex: 70%; /* IE10 */
-flex: 70%;
-background-color: white;
-padding: 20px;
-}
-.fakeimg {
-background-color: #fdd835ff;
-width: 100%;
-padding: 20px;
-}
-.footer {
-padding: 20px;
-text-align: center;
-background: #ddd;
-}
-@media screen and (max-width: 700px) {
-.row {
-flex-direction: column;
-}
-}
-@media screen and (max-width: 400px) {
-.navbar a {
-float: none;
-width: 100%;
-}
-}
-</style>
+</script>
+
 </head>
+
 <body>
 
-<div class="header">
-<h1>داوود سپهری‌کیان</h1>
-<p style="font-weight: bold">مهندس کنترل ابزاردقیق با 22 سال فعالیت در صنایع نفت و گاز</p>
+<div align="center">
+
+<div id="headerbox">
+<div id="header">
+<h1 class="h1"><-BlogTitle-></h1>
+<div class="desc"><-BlogDescription-></div>
+</div>
+<div id="navbar">
+<div class="right">
+<span class="home"><a href="<-BlogUrl->">صفحه اصلی</a></span>
+<a href="/posts">عناوین مطالب</a>
+<a title="تماس با ما" href="http://avazak.ir/abzar/contact1/mail/?email=<-BlogEmail->">تماس با من</a>
+<BlogProfileLinkBlock><a rel="nofollow" href="<-BlogProfileLink->">پروفایل</a> | </BlogProfileLinkBlock>
+<a title="قالب وبلاگ" href="http://avazak.ir/">قالب وبلاگ</a>
+</div>
+<div class="left">
+<div style="float:right;width:75%;">
+<form style="margin:0px;padding:0px;" target="_new" method=get action=http://www.google.com/search>
+<input type="text" id="inputsearch" name=q maxlength="40" placeholder="جستجو ..." />
+<input value="<-BlogUrl->" type="hidden" name=sitesearch checked>
+<input type=hidden name=ie value=UTF-8>
+<input type=hidden name=oe value=UTF-8>
+</div>
+<div style="float:left;width:25%;">
+<input class="sbs" type="submit" name="btnG" value="">
+</form>
+</div>
+</div>
+</div>
 </div>
 
-<div class="navbar">
-<a href="#" class="active">Home</a>
-<a href="#">Link</a>
-<a href="#">Link</a>
-<a href="#" class="right">Link</a>
+<div id="avazak">
+	<!-- end header -->
+	
+<!--Design By : Avazak.ir-->
+
+<div id="content">
+<div id="bodyposts">
+
+<BLOGFA>
+<div class="post">
+<h2 class="title"><a title="<-PostTitle->" href="<-PostLink->"><-PostTitle-></a></h2>
+
+<div class="date">
+<div class="day"><-PostDate-></div>
+<div class="time"><-PostTime-></div>
+<div class="author"><-PostAuthor-></div>
+<div class="comment"><BlogComment><script type="text/javascript">GetBC(<-PostId->);</script></BlogComment></div>
 </div>
 
-<div class="row">
+<div class="context"><-PostContent-><br />
+<BlogPostCategoriesBlock><div class="meta">موضوعات مرتبط: <BlogPostCategories separator=" ، " ><a href="<-CategoryLink->"><-CategoryName-></a></BlogPostCategories></div></BlogPostCategoriesBlock>
+<BlogPostTagsBlock><div class="meta">برچسب‌ها: <BlogPostTags separator=" , "><a href="<-TagLink->"><-TagName-></a></BlogPostTags></div></BlogPostTagsBlock>
+</div>
+<div class="date"><div class="more"><a href="<-PostLink->">ادامه مطلب</a></div></div>
+</div>
+</BLOGFA>
+
+<BlogNextAndPreviousBlock>
+<div class="pagination">
+<BlogPreviousPageBlock><a href="<-BlogPreviousPageLink->">[ مطالب جدیدتر ]</a></BlogPreviousPageBlock>
+ .::. 
+<BlogNextPageBlock><a href="<-BlogNextPageLink->">[ مطالب قدیمی‌تر ]</a></BlogNextPageBlock>
+</div>
+</BlogNextAndPreviousBlock>
+
+</div>
+
+	<!-- end post -->
+
+<div id="sidebar-r">
+
+<BlogAuthorsBlock>
 <div class="side">
-<h2>About Me</h2>
-<h5>Photo of me:</h5>
-<div class="fakeimg" style="height:200px;">Image</div>
-<p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-<h3>More Text</h3>
-<p>Lorem ipsum dolor sit ame.</p>
-<div class="fakeimg" style="height:60px;">Image</div><br>
-<div class="fakeimg" style="height:60px;">Image</div><br>
-<div class="fakeimg" style="height:60px;">Image</div>
+<h3 class="h3">نویسندگان</h3>
+<div class="context-side">
+<BlogAuthors>
+<div class="Link"><a title="نمایش همه نوشته های <-AuthorName->" href="<-AuthorLink->"><-AuthorName-></a></div>
+</BlogAuthors> 
+</div></div>
+</BlogAuthorsBlock>
+
+<!--Design By : Avazak.ir-->
+
+<BlogCategoriesBlock>
+<div class="side">
+<h3 class="h3">دسته بندی موضوعات</h3>
+<div class="context-side">
+<BlogCategories>
+<div class="Link"><a title="<-CategoryName->" href="<-CategoryLink->"><-CategoryName-></a></div>
+</BlogCategories>
+</div></div>
+</BlogCategoriesBlock>	
+
+<!--Design By : Avazak.ir-->
+
+<div class="side">
+<h3 class="h3">آرشیو مطالب</h3>
+<div class="context-side">
+<BlogArchive>
+<div class="Link"><a title="<-ArchiveTitle->" href="<-ArchiveLink->"><-ArchiveTitle-></a></div>
+</BlogArchive>
+</div></div>
+
+<!--Design By : Avazak.ir-->
+
+<BlogTagsBlock>
+<div class="side">
+<h3 class="h3">برچسب‌های وبلاگ</h3>
+<div class="context-side">
+<BlogTags>
+<a href="<-TagLink->"><-TagName-></a> <span dir="rtl">(<-TagCount->)</span> | 
+</BlogTags>
+</div></div>
+</BlogTagsBlock>
+
+<!--Design By : Avazak.ir-->
+
+<div class="side">
+<h3 class="h3">لینک های ویژه</h3>
+<div class="context-side">
+<div class="Link" style="font-size:7pt"><a href="http://gallery.avazak.ir" title="عکس جدید" target="_blank">عکس جدید</a></div>
+<div class="Link" style="font-size:7pt"></div></div></div>
+
+<!--Design By : Avazak.ir-->
+
+<div class="side">
+<h3 class="h3">دیگر امکانات</h3>
+<div class="context-side" style="text-align:center">
+<center><-BlogCustomHtml-></center>
+</div></div>
+
+<!-- end sidebar-r -->
+
+</div></div>
+
+<div id="sidebar-l">
+
+<div class="side">
+<h3 class="h3">آخرین مطالب</h3>
+<div class="context-side">
+<BlogPreviousItems items="10">
+<div class="Link"><a href="<-PostLink->" title="<-PostDate->"><-PostTitle-></a></div>
+</BlogPreviousItems>
+</div></div>
+
+<!--Design By : Avazak.ir-->
+
+<BlogLinkDumpBlock>
+<div class="side">
+<h3 class="h3">لینک دوستان</h3>
+<div class="context-side">
+<BlogLinkDump>
+<div class="Link"><a href="<-LinkUrl->" target="_blank" title="<-LinkDescription->" ><-LinkTitle-></a></div>
+</BlogLinkDump>
+<div class="Link"><a href="javascript:void(0)" onclick ="OpenLD();">آرشيو پيوندهاي روزانه</a></div>
+</div></div>
+</BlogLinkDumpBlock>
+
+<!--Design By : Avazak.ir-->
+
+<div class="side">
+<h3 class="h3">پیوندها</h3>
+<div class="context-side">
+<BlogLinksBlock>
+<BlogLinks>
+<div class="Link"><a title="<-LinkTitle->" href="<-LinkUrl->" target="_blank" ><-LinkTitle-></a></div>
+</BlogLinks>
+</BlogLinksBlock>
+<div class="Link">
+<a title="قالب بلاگفا" href="http://avazak.ir/tag/قالب-بلاگفا/" target="_blank">قالب بلاگفا</a>|<a href="http://tools.avazak.ir/theme/avazak/821/قالب-وبلاگ-سه-ستونه-چند-رنگ-حرفه-ای.php" title="قالب وبلاگ چند رنگ حرفه ای" target="_blank">قالب وبلاگ چند رنگ حرفه ای</a></div>
+<div class="Link"><a href="https://sabtkarimkhan.com/" title="ثبت شرکت" target="_blank">ثبت شرکت</a> | <a href="http://scriptbaran.com/telegram-source-code/" title="سورس کد" target="_blank">سورس کد</a></div>
+<div class="Link">﻿<a href="https://citybin.ir/shiz/%D8%A7%D8%B3%D8%A7%D9%85%DB%8C-%DA%A9%D8%A7%D9%81%DB%8C-%D8%B4%D8%A7%D9%BE-%D9%87%D8%A7%DB%8C-%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2/" title="کافه های شیراز" target="_blank">کافه های شیراز</a></div>
+<div class="Link"><a href="https://nekowjtravel.com/%D8%AA%D9%88%D8%B1-%D8%B4%D9%85%D8%A7%D9%84-%D8%A7%D8%B2-%D8%B4%DB%8C%D8%B1%D8%A7%D8%B2-%D8%B2%D9%85%DB%8C%D9%86%DB%8C/" title="تورشمال از شیراز" target="_blank">تورشمال از شیراز</a></div>
+<div class="Link"><a href="https://zibadesignco.com/%D9%85%D8%AD%D8%B5%D9%88%D9%84%D8%A7%D8%AA/%D9%86%D9%85%D8%A7%DB%8C-%DA%A9%D8%B1%D8%AA%DB%8C%D9%86-%D9%88%D8%A7%D9%84.html" title="" target="_blank">کرتین وال</a></div></div></div>
+
+<!--Design By : Avazak.ir-->
+
+<div class="side">
+<h3 class="h3">طراحی: داوود سپهری‌کیان</h3>
+<div class="context-side" style="text-align:center">
+[ طراح قالب: <a rel="follow" href="http://avazak.ir/tag/قالب-بلاگفا" tite="قالب بلاگفا">آوازک</a> ]<br/>
+</div></div>
+
+<!-- end sidebar-l -->
+
+</div></div>
+
+<BlogProfile>
+<div id="footerbox1">
+<div id="about">
+<BlogPhoto><div class="logo"><img src="<-BlogPhotoLink->"></div></BlogPhoto>
+<div class="text"><-BlogAbout-></div>
 </div>
-<div class="main">
-<h2>TITLE HEADING</h2>
-<h5>Title description, Dec 7, 2017</h5>
-<div class="fakeimg" style="height:200px;">Image</div>
-<p>Some text..</p>
-<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-<br>
-<h2>TITLE HEADING</h2>
-<h5>Title description, Sep 2, 2017</h5>
-<div class="fakeimg" style="height:200px;">Image</div>
-<p>Some text..</p>
-<p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 </div>
+</BlogProfile>
+
+<div id="footerbox2">
+<div id="about">تمامی حقوق این وب سایت متعلق به <a href="<-BlogUrl->" title="<-BlogTitle->" target="_blank"><-BlogTitle-></a> است. <span>||</span> طراح قالب <a href="http://avazak.ir" title="قالب وبلاگ" target="_blank">avazak.ir</a></div>
 </div>
 
-<div class="footer">
-<h2>Footer</h2>
+
 </div>
+
+<!-- end Footer -->
 
 </body>
 </html>
